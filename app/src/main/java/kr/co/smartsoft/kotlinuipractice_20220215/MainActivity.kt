@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity() {
             val inputMessage = edtMessage.text.toString()   // EDITText의 문구(text)를 추출 -> String으로 변환까지
 
             Toast.makeText(this, inputMessage, Toast.LENGTH_SHORT).show()
+
+            txtMessage.text = inputMessage  // TextView의 문구(text)을 변경 : set
+
         }
     }
 }
